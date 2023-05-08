@@ -1,0 +1,53 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>à propos</title>
+    <link rel="stylesheet" href="css/compte.css" />
+    <script type="text/javascript" src="{{ URL::asset('js/compte.js') }}"></script>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <section id="about">
+        <div class="about container">
+            <table>
+              <tr>
+                <td colspan="2" style="text-align: center;">
+                    <img id="image_compte" src="img/compte.png" style="margin-left: auto; margin-right: auto; margin-bottom:50px;" >
+                </td>
+              </tr>
+
+                <tr>
+                    <td>
+                        <h2 style="margin-bottom:30px; margin-right: 200px;">Nom d'utilisateur :</h2>
+                    </td>
+                    <td>
+                        <p id="username" style="margin-bottom:30px;"><%= user.username %></p>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h2 style="margin-bottom:30px; margin-right: 200px";>Nom complet :</h2>
+                  </td>
+                  <td>
+                    <p style="margin-bottom:30px;"><%= user.name %></p>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Email :</h2>
+                    </td>
+                    <td>
+                        <p id="email"><%= user.email %></p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+    <%- include('partials/footer') %>
+</body>
+
+</html>

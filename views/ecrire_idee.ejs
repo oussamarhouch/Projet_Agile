@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>écrire une idée</title>
+    <link rel="stylesheet" href="css/ecrire_idee.css" />
+    <script type="text/javascript" src="{{ URL::asset('js/ecrire_idee.js') }}"></script>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <section id="about">
+        <div class="about container">
+          <div class="ideainput">
+            <form action="ecrire_idee" method="post">
+              <table>
+
+                <tr>
+                  <td>
+                      <h1>écrire votre <span style="color: red">Idée</span></h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" id="titre" name="title" placeholder="entrer le titre">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea type="text" name="idea" id="idea" placeholder="Entrer votre idée"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="submit" class="cta" value="envoyer" >
+                  </td>
+                </tr>
+              </table>
+
+            </form>
+
+
+          </div>
+          </div>
+    </section>
+    <%- include('partials/footer') %>
+</body>
+
+</html>

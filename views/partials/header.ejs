@@ -1,0 +1,87 @@
+<section id="header">
+  <div class="header container">
+    <div class="nav-bar">
+      <div class="brand">
+        <a href="#hero">
+          <h1>
+            <span>B</span>oite à <span>I</span>dées <span>I</span>nnovantes
+          </h1>
+        </a>
+      </div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <% if(statut != 0 ) { %>
+            <% if(statut === 1){ %>
+              <li>
+                <a href="ecrire_idee"> écrire idée </a>
+              </li>
+              <li>
+                <a href="idees_envoyees"> idées envoyées </a>
+              </li>
+              <li>
+                <a href="idees"> toutes les idées </a>
+              </li>
+              <li>
+                <a href="defi_mois"> défi du mois </a>
+              </li>
+              <li>
+                <a href="compte"> Compte </a>
+              </li>
+              <li>
+                <a href="logout">
+                  Se déconnecter
+                </a>
+              </li>
+            <% } else{ %>
+              <li>
+                <a href="ecrire_defi">
+                  écrire défi
+                </a>
+              </li>
+              <li>
+                <a href="voir_defi">
+                  défi du mois
+                </a>
+              </li>
+              <li>
+                <a href="idees_admin">
+                  idées reçues
+                </a>
+              </li>
+              <li>
+                <a href="compte">
+                  Compte
+                </a>
+              </li>
+              <li>
+                <a
+                  href="logout">
+                  Se déconnecter
+                </a>
+              </li>
+            <% } %>
+          <% } else { %>
+          <li>
+            <a href="/"> Acceuil </a>
+          </li>
+          <li>
+            <a href="propos"> à propos </a>
+          </li>
+          <li>
+            <a href="contact"> Contact </a>
+          </li>
+          <li>
+            <a href="login"> Se connecter </a>
+          </li>
+          <li>
+            <a href="register"> S'inscrire </a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
